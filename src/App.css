@@ -1,38 +1,44 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* text-align: center; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* justify-content: center; */
+  margin-top: 2rem;
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+}
+
+.AppHeader {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.AppHeader h1 {
+  font-size: 1.7rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.AppHeader .pokeball-img {
+  width: 2rem;
+}
+
+@media (min-width: 480px) {
+  .AppHeader {
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (min-width: 768px) {
+  .App {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .App h1 {
+    font-size: 2.5rem;
   }
 }

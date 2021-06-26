@@ -1,0 +1,27 @@
+.PokeName {
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.PokeName span {
+  display: none;
+}
+
+.PokeName-name {
+  text-transform: capitalize;
+}
+
+@media (min-width: 500px) {
+  .PokeName {
+    font-size: 2rem;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .PokeName span {
+    display: inline;
+  }
+}

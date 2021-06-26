@@ -1,0 +1,27 @@
+.PokeSprites {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  /* width: 7rem; */
+}
+
+.PokeSprites img {
+  border: 5px solid white;
+  border-radius: 100px;
+  background-color: var(--color-neongreen);
+  width: 100%;
+}
+
+@media (min-width: 480px) {
+  .PokeSprites {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .PokeSprites {
+    width: 15rem;
+  }
+}
